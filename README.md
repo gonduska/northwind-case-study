@@ -54,3 +54,7 @@ The Top 3 best performing products ('Côte de Blaye', 'Thüringer Rostbratwurst'
 Strategic marketing around these high-performers could significantly boost overall sales. Additionally, these products span different categories, suggesting diverse customer preferences.
 
 🔗 [SQL code for Q1](./sql/question_1_top_products.sql)
+
+Here's a visualisation of the top-selling products from the Northwind Dataset:
+
+![Top Products Bar Chart](./visuals/top_10_products_by_revenue.png)

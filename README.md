@@ -1,2 +1,56 @@
-# northwind-case-study
-Project 1 for showcasing my Data Analytical skills as part of a portfolio.
+# Northwind Traders Analytics Case Study
+## Project Summary
+
+This project explores the Northwind Traders dataset to extract important business insights using SQL.
+The goal is to analyze sales trends, identify top performing products alongside their categories.
+Another aim is to evaluate employee performance, and examine shipping and supply efficiency.
+This case study simulates real-world analytics tasks and provides data-driven recommendations for decision making and to improve operations.
+
+## Objectives
+
+- What are the top-selling products and categories by revenue?
+
+- Which customers generate the most value?
+
+- How do sales vary over time?
+
+- Which employees contribute the most to sales?
+
+- How efficient are the shipping methods?
+
+- Are there patterns or concerns in inventory or supplier management?
+
+## Dataset Introduction and Description
+
+The dataset simulates a small business's operations and includes information on customers, orders, products, employees, suppliers, and shipping methods.
+
+Key tables:
+
+- Orders: Sales transactions
+
+- OrderDetails: Line items for each order
+
+- Customers: Info about buyers
+
+- Employees: Sales representatives
+
+- Products: Product catalogue and stock
+
+- Categories: Product category info
+
+- Suppliers: Who provides the products
+
+- Shippers: Shipping companies
+
+## Tools used
+
+- MySQL/SQLite
+- Tableau
+
+## Analysis Section
+### Top-selling products and categories by revenue
+The product 'Côte de Blaye' generated the highest revenue, significantly outperforming all others. This could be a result of high unit price, high volume, or both. Something worth investigating further.
+The Top 3 best performing products ('Côte de Blaye', 'Thüringer Rostbratwurst', and 'Raclette Courdavault') contributing to over 23% of the total sales. 
+Strategic marketing around these high-performers could significantly boost overall sales. Additionally, these products span different categories, suggesting diverse customer preferences.
+
+🔗 [SQL code for Q1](./sql/question_1_top_products.sql)

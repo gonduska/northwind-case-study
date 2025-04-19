@@ -60,11 +60,22 @@ Here's a visualisation of the top-selling products from the Northwind Dataset:
 ![Top Products Bar Chart](./visuals/top_10_products_by_revenue.png)
 
 ### Customers generating the most value
-Investigating consumer details can tailor the business' approach targeting specific regions. 
-The graph below shows the total amount spent from each country. It is clear that the Top 5 countries are USA, Germany, Austria, Brazil and France.
-
+Investigating costumer spending patterns can tailor the business' approach targeting specific regions. 
+The graph below shows the total revenue per country, with the top five being the USA, Germany, Austria, Brazil, and France:
 ![Top_Countries_Bar_Chart](./visuals/02_top_payments_country.png)
 
-However, we are also interested in the highest spenders, namely our most valued customers and to see whether there is a direct correlation with the previously mentioned countries.
+To dive deeper, we explored individual customers to determine whether these high-revenue countries are supported by a large number of small purchases or a few major contributors:
 
 ![Top_Spenders_Bar_Chart](./visuals/02_most_valued_customers.png)
+
+Using the SQL scipt linked below, we calculated whether the top countries are consist of multiple smaller sales, or each has a few, but very big spenders that evidently boosting the sales for that region.
+[SQL code for Q2](./sql/question_2_top_spenders.sql)
+Key findings include:
+
+- USA: Jose Pavarotti accounts for 43.89% of all US sales
+
+- Germany: Horst Kloss generates 48.02% of the country’s sales
+
+- Austria: Roland Mendel alone makes up 81.18% of Austria’s total revenue
+
+These insights show how a handful of customers can disproportionately influence regional performance, which opens up opportunities for personalised marketing, premium offers, or even VIP programs.

@@ -69,7 +69,9 @@ To dive deeper, we explored individual customers to determine whether these high
 ![Top_Spenders_Bar_Chart](./visuals/02_most_valued_customers.png)
 
 Using the SQL scipt linked below, we calculated whether the top countries are consist of multiple smaller sales, or each has a few, but very big spenders that evidently boosting the sales for that region.
-[SQL code for Q2](./sql/question_2_top_spenders.sql)
+
+🔗 [SQL code for Q2](./sql/question_2_top_spenders.sql)
+
 Key findings include:
 
 - USA: Jose Pavarotti accounts for 43.89% of all US sales

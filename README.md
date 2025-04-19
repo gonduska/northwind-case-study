@@ -62,6 +62,9 @@ Here's a visualisation of the top-selling products from the Northwind Dataset:
 ### Customers generating the most value
 Investigating consumer details can tailor the business' approach targeting specific regions. 
 The graph below shows the total amount spent from each country. It is clear that the Top 5 countries are USA, Germany, Austria, Brazil and France.
-However, we are also interested in the highest spenders, namely our most valued customers and to see whether there is a direct correlation with the previously mentioned countries.
 
 ![Top_Countries_Bar_Chart](./visuals/02_top_payments_country.png)
+
+However, we are also interested in the highest spenders, namely our most valued customers and to see whether there is a direct correlation with the previously mentioned countries.
+
+![Top_Spenders_Bar_Chart](./visuals/02_most_valued_customers.png)

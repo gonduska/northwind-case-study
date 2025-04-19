@@ -58,3 +58,10 @@ Strategic marketing around these high-performers could significantly boost overa
 Here's a visualisation of the top-selling products from the Northwind Dataset:
 
 ![Top Products Bar Chart](./visuals/top_10_products_by_revenue.png)
+
+### Customers generating the most value
+Investigating consumer details can tailor the business' approach targeting specific regions. 
+The graph below shows the total amount spent from each country. It is clear that the Top 5 countries are USA, Germany, Austria, Brazil and France.
+However, we are also interested in the highest spenders, namely our most valued customers and to see whether there is a direct correlation with the previously mentioned countries.
+
+![Top_Countries_Bar_Chart](./visuals/02_top_payments_country.png)

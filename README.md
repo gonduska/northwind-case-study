@@ -81,3 +81,18 @@ Key findings include:
 - Austria: Roland Mendel alone makes up 81.18% of Austria’s total revenue
 
 These insights show how a handful of customers can disproportionately influence regional performance, which opens up opportunities for personalised marketing, premium offers, or even VIP programs.
+
+## Sales Trend over Time
+
+Investigating how sales varies over time can give us meaningful insights.
+The following interactive dashboard showcases monthly sales trends by product category and shipping country, based on Northwind’s transactional data. 
+I used SQL for data transformation and Tableau for visualization, including dynamic tooltips, trend analysis, and filtering options to support decision-making.
+Preview:
+
+![Dashboard Preview](images/03_sales_over_time.png)
+
+Download the Tableau Workbook: [Book1.twb](./Book1.twb)
+
+
+🔗 [SQL code for Q2](./sql/question_3_sales_over_time.sql)
+

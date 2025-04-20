@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='question3' inline='true' name='federated.1fnhk1a1kb4w5012yq4op0x916b1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='question3' name='textscan.0nydslo0rpink619cok5010fp2ee'>
+            <connection class='textscan' directory='D:/GitHub/Project 1' filename='question3.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0nydslo0rpink619cok5010fp2ee' name='question3.csv' table='[question3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='OrderDate' ordinal='0' />
+            <column datatype='real' name='TotalAmount' ordinal='1' />
+            <column datatype='string' name='ShipCountry' ordinal='2' />
+            <column datatype='string' name='CategoryName' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[question3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[OrderDate]</local-name>
+            <parent-name>[question3.csv]</parent-name>
+            <remote-alias>OrderDate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalAmount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalAmount]</local-name>
+            <parent-name>[question3.csv]</parent-name>
+            <remote-alias>TotalAmount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShipCountry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ShipCountry]</local-name>
+            <parent-name>[question3.csv]</parent-name>
+            <remote-alias>ShipCountry</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CategoryName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CategoryName]</local-name>
+            <parent-name>[question3.csv]</parent-name>
+            <remote-alias>CategoryName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Category Name' datatype='string' name='[CategoryName]' role='dimension' type='nominal' />
+      <column caption='Order Date' datatype='date' name='[OrderDate]' role='dimension' type='ordinal' />
+      <column caption='Ship Country' datatype='string' name='[ShipCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Total Amount' datatype='real' name='[TotalAmount]' role='measure' type='quantitative' />
+      <column caption='question3.csv' datatype='table' name='[__tableau_internal_object_id__].[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/thoma/Documents/My Tableau Repository/Datasources/question3.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/19/2025 09:53:55 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='question3' increment-value='%null%' refresh-type='create' rows-inserted='2155' timestamp-start='2025-04-19 21:53:54.393' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>OrderDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[OrderDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OrderDate</remote-alias>
+              <ordinal>0</ordinal>
+              <family>question3.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>486</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalAmount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalAmount</remote-alias>
+              <ordinal>1</ordinal>
+              <family>question3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>702</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ShipCountry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ShipCountry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ShipCountry</remote-alias>
+              <ordinal>2</ordinal>
+              <family>question3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CategoryName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CategoryName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CategoryName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>question3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[question3.csv_CE774F5AEE694227B4879BD2A1C17AD3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='question3.csv' id='question3.csv_CE774F5AEE694227B4879BD2A1C17AD3'>
+            <properties context=''>
+              <relation connection='textscan.0nydslo0rpink619cok5010fp2ee' name='question3.csv' table='[question3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='OrderDate' ordinal='0' />
+                  <column datatype='real' name='TotalAmount' ordinal='1' />
+                  <column datatype='string' name='ShipCountry' ordinal='2' />
+                  <column datatype='string' name='CategoryName' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='dada' inline='true' name='federated.1rb38cb1c6jcon197ba4v1nwfndi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dada' name='textscan.0jivnxk0obwayp11tv8tf0mam70z'>
+            <connection class='textscan' directory='C:/Users/thoma/Downloads' filename='dada.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jivnxk0obwayp11tv8tf0mam70z' name='dada.csv' table='[dada#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='real' name='Total_Spent' ordinal='1' />
+            <column datatype='string' name='ContactName' ordinal='2' />
+            <column datatype='real' name='Total_Spent 1' ordinal='3' />
+            <column datatype='real' name='Percent_As_Countries_Total' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Spent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Spent]</local-name>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias>Total_Spent</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ContactName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ContactName]</local-name>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias>ContactName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Spent 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total_Spent 1]</local-name>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias>Total_Spent 1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percent_As_Countries_Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percent_As_Countries_Total]</local-name>
+            <parent-name>[dada.csv]</parent-name>
+            <remote-alias>Percent_As_Countries_Total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Contact Name' datatype='string' name='[ContactName]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Percent As Countries Total' datatype='real' name='[Percent_As_Countries_Total]' role='measure' type='quantitative' />
+      <column caption='Total Spent 1' datatype='real' name='[Total_Spent 1]' role='measure' type='quantitative' />
+      <column caption='Total Spent' datatype='real' name='[Total_Spent]' role='measure' type='quantitative' />
+      <column caption='dada.csv' datatype='table' name='[__tableau_internal_object_id__].[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/thoma/Documents/My Tableau Repository/Datasources/dada.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/19/2025 08:56:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='dada' increment-value='%null%' refresh-type='create' rows-inserted='21' timestamp-start='2025-04-19 20:56:38.001' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dada.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Spent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Spent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Spent</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dada.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ContactName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ContactName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ContactName</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dada.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Spent 1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total_Spent 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Spent 1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dada.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percent_As_Countries_Total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Percent_As_Countries_Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percent_As_Countries_Total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dada.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dada.csv_23ADFF58B2674001A11FE4FF9A8A4453]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='dada.csv' id='dada.csv_23ADFF58B2674001A11FE4FF9A8A4453'>
+            <properties context=''>
+              <relation connection='textscan.0jivnxk0obwayp11tv8tf0mam70z' name='dada.csv' table='[dada#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='real' name='Total_Spent' ordinal='1' />
+                  <column datatype='string' name='ContactName' ordinal='2' />
+                  <column datatype='real' name='Total_Spent 1' ordinal='3' />
+                  <column datatype='real' name='Percent_As_Countries_Total' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Monthly Sales Trend by Category (Global Overview)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='question3' name='federated.1fnhk1a1kb4w5012yq4op0x916b1' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1fnhk1a1kb4w5012yq4op0x916b1'>
+            <column caption='Category Name' datatype='string' name='[CategoryName]' role='dimension' type='nominal' />
+            <column caption='Order Date' datatype='date' name='[OrderDate]' role='dimension' type='ordinal' />
+            <column caption='Ship Country' datatype='string' name='[ShipCountry]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Total Amount' datatype='real' name='[TotalAmount]' role='measure' type='quantitative' />
+            <column-instance column='[OrderDate]' derivation='Month' name='[mn:OrderDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CategoryName]' derivation='None' name='[none:CategoryName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ShipCountry]' derivation='None' name='[none:ShipCountry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalAmount]' derivation='Sum' name='[sum:TotalAmount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:CategoryName:nk]'>
+            <groupfilter function='level-members' level='[none:CategoryName:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:ShipCountry:nk]'>
+            <groupfilter function='level-members' level='[none:ShipCountry:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:CategoryName:nk]</column>
+            <column>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:ShipCountry:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[sum:TotalAmount:qk]' scope='rows' value='Monthly Revenue ($)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[sum:TotalAmount:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Month of Order Date:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fnhk1a1kb4w5012yq4op0x916b1].[mn:OrderDate:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Amount:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1fnhk1a1kb4w5012yq4op0x916b1].[sum:TotalAmount:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='size' value='3.1270718574523926' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[sum:TotalAmount:qk]</rows>
+        <cols>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[mn:OrderDate:qk]</cols>
+      </table>
+      <simple-id uuid='{780AD1F7-E647-4F3D-ABE5-D2A23E5C4B78}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:ShipCountry:nk]' type='filter' />
+            <card param='[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:CategoryName:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[attr:ShipCountry:nk]</field>
+            <field>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:CategoryName:nk]</field>
+            <field>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[none:ShipCountry:nk]</field>
+            <field>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[sum:TotalAmount:qk]</field>
+            <field>[federated.1fnhk1a1kb4w5012yq4op0x916b1].[yr:OrderDate:ok]</field>
+            <field>[federated.1rb38cb1c6jcon197ba4v1nwfndi].[:Measure Names]</field>
+            <field>[federated.1rb38cb1c6jcon197ba4v1nwfndi].[none:ContactName:nk]</field>
+            <field>[federated.1rb38cb1c6jcon197ba4v1nwfndi].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{42D70437-7577-4E7D-8D0B-C2FF4EC7021F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      q9Wu86Jr/X9zgrEWXGZ8iAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

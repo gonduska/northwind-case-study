@@ -85,8 +85,11 @@ These insights show how a handful of customers can disproportionately influence 
 ## Sales Trend over Time
 
 Investigating how sales varies over time can give us meaningful insights.
+
 The following interactive dashboard showcases monthly sales trends by product category and shipping country, based on Northwind’s transactional data. 
+
 I used SQL for data transformation and Tableau for visualization, including dynamic tooltips, trend analysis, and filtering options to support decision-making.
+
 Preview:
 
 ![Dashboard Preview](./visuals/03_sales_over_time.png)

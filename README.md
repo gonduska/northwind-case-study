@@ -89,10 +89,10 @@ The following interactive dashboard showcases monthly sales trends by product ca
 I used SQL for data transformation and Tableau for visualization, including dynamic tooltips, trend analysis, and filtering options to support decision-making.
 Preview:
 
-![Dashboard Preview](images/03_sales_over_time.png)
+![Dashboard Preview](./visuals/03_sales_over_time.png)
 
 Download the Tableau Workbook: [Book1.twb](./Book1.twb)
 
 
-🔗 [SQL code for Q2](./sql/question_3_sales_over_time.sql)
+🔗 [SQL code for Q3](./sql/question_3_sales_over_time.sql)
 

@@ -99,3 +99,42 @@ Download the Tableau Workbook: [Book1.twb](./Book1.twb)
 
 🔗 [SQL code for Q3](./sql/question_3_sales_over_time.sql)
 
+## Most Valuable Employees
+
+In this section, we are finding which of our employees are generating the biggest revenue, and also how many orders they have succesfully completed.
+
+The following table ranks employees based on their **total sales revenue** and **order volume**, identifying the company's top performers. 
+
+| Rank | Employee Name         | Total Orders | Total Sales ($) |
+|------|-----------------------|--------------|-----------------|
+| 1    | Mrs. Margaret Peacock| 156          | 250,187.45      |
+| 2    | Ms. Janet Leverling  | 127          | 213,051.30      |
+| 3    | Ms. Nancy Davolio    | 123          | 202,143.71      |
+| 4    | Dr. Andrew Fuller    | 96           | 177,749.26      |
+| 5    | Mr. Robert King      | 72           | 141,295.99      |
+| 6    | Ms. Laura Callahan   | 104          | 133,301.03      |
+| 7    | Ms. Anne Dodsworth   | 43           | 82,964.00       |
+| 8    | Mr. Michael Suyama   | 67           | 78,198.10       |
+| 9    | Mr. Steven Buchanan  | 42           | 75,567.75       |
+
+
+As a mentionable insight, the average total sales across all employees is **150,495.4 ($)** and **92** total orders have been completed.
+
+### Deeper Insights & Future Exploration
+
+While revenue and order volume paint a strong initial picture of employee performance, there's more beneath the surface:
+
+- **Order Fulfilment Time:**  
+  Investigating the time between `OrderDate` and `ShippedDate` for each employee can reveal how quickly they manage to push orders through the pipeline.
+
+  An employee handling mostly local orders may show higher order counts due to faster turnover, not necessarily better performance.
+
+- **Geographic Bias:**  
+  Since shipping times vary based on destination, employees assigned to different regions may appear slower or faster than others — this could skew their metrics.
+
+- **Tenure vs Performance:**  
+  By comparing each employee’s total sales to their hire date, we can calculate average monthly or yearly revenue per employee. This helps separate high-performing newcomers from long-serving steady earners.
+
+
+🔗 [SQL code for Q4](./sql/question_4_employee_performance.sql)
+

@@ -174,3 +174,13 @@ No statistically significant delays associated with any specific shipper.
 
 It is recommended to further investigate whether discontinued products were knowingly sold. Also to monitor unshipped orders over the next 3–5 business days to confirm fulfillment status. We could create automated alerts for any orders exceeding average delivery time.
 
+## Final Thoughts
+
+This project gave me the opportunity to explore a realistic business dataset using SQL and Tableau to extract meaningful insights. 
+
+Beyond answering core business questions, I focused on identifying hidden issues in supply and order fulfillment, and framed them through in a practical sense. 
+
+If I were to expand this further, I’d explore forecasting order delays or building a real-time dashboard for operations. 
+
+
+

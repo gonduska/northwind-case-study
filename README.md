@@ -148,11 +148,11 @@ This project includes two SQL files: one focusing on high-level order delivery p
 
 The first script provides insights into average delivery times, unshipped orders, and shipper performance. 
 
-🔗 [SQL code for Q4](./sql/question_5_shipping_performance_01.sql)
+🔗 [SQL code for Q5](./sql/question_5_shipping_performance_01.sql)
 
 The second script investigates individual product line items - particularly those involving discontinued products - to identify fulfillment risks or policy issues.
 
-🔗 [SQL code for Q4](./sql/question_5_shipping_performance_02.sql)
+🔗 [SQL code for Q5](./sql/question_5_shipping_performance_02.sql)
 
 ### Key insights:
 

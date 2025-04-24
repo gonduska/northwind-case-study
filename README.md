@@ -138,3 +138,39 @@ While revenue and order volume paint a strong initial picture of employee perfor
 
 🔗 [SQL code for Q4](./sql/question_4_employee_performance.sql)
 
+## Shipping Performance and Order Completion Audit
+
+I analysed order fulfillment times using the Northwind dataset to identify operational inefficiencies, late deliveries, and potential shipping issues. 
+
+This involved calculating average delivery durations, identifying outliers, and investigating unshipped orders and discontinued products.
+
+This project includes two SQL files: one focusing on high-level order delivery performance, and the other zooming into product-level shipment status.
+
+The first script provides insights into average delivery times, unshipped orders, and shipper performance. 
+
+🔗 [SQL code for Q4](./sql/question_5_shipping_performance_01.sql)
+
+The second script investigates individual product line items - particularly those involving discontinued products - to identify fulfillment risks or policy issues.
+
+🔗 [SQL code for Q4](./sql/question_5_shipping_performance_02.sql)
+
+### Key insights:
+
+Based on 809 orders, the average delivery time is 8.5 days. 
+
+21 orders (2.5%) have NULL shipping dates, despite all address and order details being present:
+  - 14 products are still in production, likely still in the fulfillment pipeline.
+  - 7 discontinued products — needs investigation: were they discontinued before or after the order was placed?
+
+Shipping performance is consistent across providers:
+
+- United Package: 114 shipments
+
+- Speedy Express: 80 shipments
+
+- Federal Shipping: 71 shipments
+
+No statistically significant delays associated with any specific shipper.
+
+It is recommended to further investigate whether discontinued products were knowingly sold. Also to monitor unshipped orders over the next 3–5 business days to confirm fulfillment status. We could create automated alerts for any orders exceeding average delivery time.
+
